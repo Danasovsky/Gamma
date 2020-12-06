@@ -1,0 +1,286 @@
+/*page*/
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 18pt;
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+}
+
+* { color:black; 
+    text-decoration: none;}
+    
+#header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 45pt;
+    color: black;
+    padding-top: 5px;
+    margin: 0;
+    font-weight:500;
+    text-align: center;
+    letter-spacing: 1.5px;
+    z-index:2;
+}
+    
+/*main section*/
+
+.fwh-main {
+    height: 100vh;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+
+/*menu icon*/
+
+
+#menu{
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 8%;
+    left: 87%;
+    transform: translateX(-50%) translateY(-50%)
+
+}
+
+
+.bar{
+    width: 35px;
+    height: 5px;
+    background-color: #fc7c54;
+    margin: 6px 0;
+    transition: 0.4s;
+      z-index:2;
+}
+
+.change .bar{
+	background-color: #fc7c54
+        z-index:2;
+}
+.change #bar1{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+      z-index:2;
+}
+.change #bar3{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+      z-index:2;
+}
+.change #bar2{
+    opacity: 0;
+        z-index:2;
+}
+
+
+.nav li a{
+    font-size:18pt;
+    font-weight: 400;
+	color: #fc7c54;
+	text-decoration: none;
+      z-index:2;
+}
+.nav li a:hover{
+	font-weight: bold;
+      z-index:2;
+}
+.nav li{
+	list-style: none;
+	line-height: 1.5px;
+	letter-spacing:1.5px;
+	position: relative;
+    left: 65%;
+    transform: translateX(-50%) translateY(-50%);
+      z-index:2;
+	
+}
+.nav{
+	padding: 0;
+	margin: 0 2px;
+	transition: 0.3s ease;
+	display: none;
+	position: fixed;
+      z-index:2;
+}
+
+.left {
+  text-align: left;
+      z-index:2;
+}
+
+
+.change{
+	display: block;
+      z-index:2;
+	
+}
+
+
+/*fwh-motivation layout*/
+
+.fwh-motivation {
+    height: 100vh;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+section .container{
+  margin: 100px;
+}
+
+section h2 {
+  margin-top: 0px;
+  font-size: 300px;
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  color: #54d5fc;
+  display: inline-flex;
+  font-weight: 400;
+  rotation: 5deg;
+}
+
+section .cards{
+  display: flex;
+}
+
+section .cards .text-card{
+  background: #e6e6e6;
+  margin: 20px;
+  padding: 20px;
+  border-radius:10PX;
+  font-size: 18px;
+  text-align: justify;
+  height:28vh;
+}
+
+section .cards .text-card h3{
+  font-size: 70px;
+  text-align: center;
+  margin-top: 2%;
+  padding-top:0;
+  background: url(https://i.ibb.co/Dbf4K4S/Untitled-Artwork-6.png) no-repeat center 100px;
+  background-size: auto;
+  position: absolute;
+    z-index:2;
+}
+
+.image-wrapper1 {
+  margin-top:5px;
+  animation-name: fading;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  }
+
+@keyframes fading {
+  0%   {opacity: 0%;}
+  100% {opacity:100%;}
+  
+    }
+
+.image-wrapper2 {
+  margin-top:5px;
+  animation-name: fading;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+  }
+
+@keyframes fading {
+  0%   {opacity: 0%;}
+  100% {opacity:100%;}
+  
+    }
+
+.image-wrapper3 {
+  margin-top:5px;
+  animation-name: fading;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  }
+
+@keyframes fading {
+  0%   {opacity: 0%;}
+  100% {opac%;}
+  
+    }
+  
+  .img   {
+  z-index:-1;
+      }
+
+
+
+    
+/*fwh-webdev layout*/
+
+.fwh-webdev {
+    height: 100vh;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.fwh-webdev p{
+        margin: 0;
+}       
+
+.h4 {
+  margin-top: 0px;
+  font-size: 40pt;
+  position: absolute;
+  text-align:left;
+  color: black;
+  font-weight: 400;
+  margin-left: 10%;
+}
+
+/*fwh-becode layout*/
+
+.fwh-becode {
+    height: 100vh;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.fwh-becode p{
+        margin: 0;
+}       
+    
+/*fwh-about layout*/
+
+.fwh-about {
+    height: 100vh;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fwh-about p{
+        margin: 0;
+}   
+
+
