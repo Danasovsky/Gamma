@@ -2,15 +2,14 @@
 
 body {
     font-family: 'Merriweather', serif;
-    font-size: 18pt;
     background-color: #e6e6e6;
-    text-align: center;
     padding: 0px;
     margin: 0;
 }
 
 * { color:black; 
-    text-decoration: none;}
+    text-decoration: none;
+}
     
 #header h1 {
     position: absolute;
@@ -33,13 +32,10 @@ body {
     height: 100vh;
     background: #e6e6e6;
     box-sizing: border-box;
-    margin: 0;
-    
+    margin: 0;    
 }
 
-
 /*menu icon*/
-
 
 #menu{
     display: inline-block;
@@ -47,10 +43,11 @@ body {
     position: fixed;
     top: 8%;
     left: 87%;
-    transform: translateX(-50%) translateY(-50%)
-
+    transform: translateX(-50%) translateY(-50%);
+      z-index:2;
 }
 
+    /*bars*/
 
 .bar{
     width: 35px;
@@ -58,57 +55,63 @@ body {
     background-color: #fc7c54;
     margin: 6px 0;
     transition: 0.4s;
-      z-index:2;
+    z-index:2;
 }
 
 .change .bar{
-	background-color: #fc7c54
-        z-index:2;
+    background-color: #fc7c54;
+    z-index: ;
 }
+
 .change #bar1{
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
-      z-index:2;
+  z-index:2;
 }
+
 .change #bar3{
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
-      z-index:2;
-}
-.change #bar2{
-    opacity: 0;
-        z-index:2;
+  z-index:2;
 }
 
+.change #bar2{
+  opacity: 0;
+  z-index:2;
+}
+
+      /*list titles*/
 
 .nav li a{
-    font-size:18pt;
-    font-weight: 400;
+  font-size:18pt;
+  font-weight: 400;
 	color: #fc7c54;
 	text-decoration: none;
-      z-index:2;
+  z-index:2;
 }
+
 .nav li a:hover{
 	font-weight: bold;
-      z-index:2;
+  z-index:2;
 }
+
 .nav li{
 	list-style: none;
-	line-height: 1.5px;
+	line-height: 3px;
 	letter-spacing:1.5px;
 	position: relative;
-    left: 65%;
-    transform: translateX(-50%) translateY(-50%);
-      z-index:2;
-	
+  left: 65%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index:2;	
 }
+
 .nav{
 	padding: 0;
 	margin: 0 2px;
 	transition: 0.3s ease;
 	display: none;
 	position: fixed;
-      z-index:2;
+  z-index:2;
 }
 
 .left {
@@ -119,8 +122,7 @@ body {
 
 .change{
 	display: block;
-      z-index:2;
-	
+  z-index:2;
 }
 
 
@@ -135,16 +137,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
-
 
 section .container{
   margin: 100px;
 }
 
-section h2 {
+.imgwhitelines {
   margin-top: 0px;
   font-size: 300px;
   position: absolute;
@@ -153,7 +152,6 @@ section h2 {
   color: #54d5fc;
   display: inline-flex;
   font-weight: 400;
-  rotation: 5deg;
 }
 
 section .cards{
@@ -172,13 +170,13 @@ section .cards .text-card{
 
 section .cards .text-card h3{
   font-size: 70px;
-  text-align: center;
+  text-align: justify;
   margin-top: 2%;
   padding-top:0;
   background: url(https://i.ibb.co/Dbf4K4S/Untitled-Artwork-6.png) no-repeat center 100px;
   background-size: auto;
   position: absolute;
-    z-index:2;
+  z-index:2;
 }
 
 .image-wrapper1 {
@@ -193,8 +191,7 @@ section .cards .text-card h3{
 @keyframes fading {
   0%   {opacity: 0%;}
   100% {opacity:100%;}
-  
-    }
+}
 
 .image-wrapper2 {
   margin-top:5px;
@@ -208,8 +205,7 @@ section .cards .text-card h3{
 @keyframes fading {
   0%   {opacity: 0%;}
   100% {opacity:100%;}
-  
-    }
+}
 
 .image-wrapper3 {
   margin-top:5px;
@@ -218,52 +214,100 @@ section .cards .text-card h3{
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-delay: 5s;
-  }
+}
 
 @keyframes fading {
   0%   {opacity: 0%;}
-  100% {opac%;}
+  100% {opacity: 100%;}
+}
   
-    }
-  
-  .img   {
+.img   {
   z-index:-1;
-      }
-
-
-
-    
+}
+  
 /*fwh-webdev layout*/
 
 .fwh-webdev {
     height: 100vh;
     background: #e6e6e6;
     box-sizing: border-box;
-    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
 }
 
 .fwh-webdev p{
         margin: 0;
-}       
+}   
 
-.h4 {
-  margin-top: 0px;
-  font-size: 40pt;
-  position: absolute;
-  text-align:left;
-  color: black;
-  font-weight: 400;
-  margin-left: 10%;
+section .container{
+  margin: 50px;
 }
+
+.why {
+  color: #fff;
+  font-size: 60px;
+  margin:0;
+  padding-left: 40px;
+}
+
+.cont {
+  position: relative;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 65%;
+  z-index: 0;
+}
+
+.image {
+  display: block;
+  width: 115%;
+  height: auto;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 115%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fc7c54;
+ }
+
+.cont:hover .overlay {
+  opacity: 60%;
+}
+
+.imgblackstone {
+  width: 275px;
+  height: 275px;
+  margin-top: 0;
+  position: absolute;
+  top: 178%;
+  right: 0%;
+  display: inline-flex;
+  z-index:0;
+  }
+  
+.textwebdev {
+  color:#fc7c54;
+  font-size: 20px;
+
+}  
 
 /*fwh-becode layout*/
 
 .fwh-becode {
-    height: 100vh;
+    fw 100vh;
     background: #e6e6e6;
     box-sizing: border-box;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 .fwh-becode p{
@@ -274,6 +318,7 @@ section .cards .text-card h3{
 
 .fwh-about {
     height: 100vh;
+    font-size:500px;
     background: #e6e6e6;
     box-sizing: border-box;
     margin: 0;
@@ -282,5 +327,6 @@ section .cards .text-card h3{
 .fwh-about p{
         margin: 0;
 }   
+
 
 
